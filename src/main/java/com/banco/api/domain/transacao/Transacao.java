@@ -26,6 +26,4 @@ public class Transacao {
     private Conta destino;
         private LocalDateTime hora;
 
-
-
 }
