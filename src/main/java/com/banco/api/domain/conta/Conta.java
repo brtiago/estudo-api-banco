@@ -1,4 +1,4 @@
-package com.banco.api.domain;
+package com.banco.api.domain.conta;
 
 import jakarta.persistence.*;
 
