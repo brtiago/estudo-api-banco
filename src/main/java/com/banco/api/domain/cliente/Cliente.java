@@ -1,5 +1,6 @@
 package com.banco.api.domain.cliente;
 
+import com.banco.api.dto.ClienteDTO;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import lombok.*;
@@ -25,4 +26,7 @@ public class Cliente {
     private String senha;
     @Enumerated(EnumType.STRING)
     private TipoCliente tipo;
+
+    public Cliente(ClienteDTO dados) {
+    }
 }
