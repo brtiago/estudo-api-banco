@@ -8,9 +8,9 @@ public record TransacaoDTO(
         @NotBlank
         BigDecimal valor,
         @NotBlank
-        Long contaDebitada,
+        Long pagador,
         @NotBlank
-        Long contaCreditada
+        Long beneficiario
 ) {
 
 
