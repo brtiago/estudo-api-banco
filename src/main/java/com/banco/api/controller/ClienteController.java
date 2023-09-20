@@ -5,11 +5,10 @@ import com.banco.api.dto.ClienteDTO;
 import com.banco.api.dto.ListagemClienteDTO;
 import com.banco.api.repository.ClienteRepository;
 import jakarta.transaction.Transactional;
-import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @RestController
 @RequestMapping("/cliente")
@@ -23,7 +22,7 @@ public class ClienteController {
         repository.save(new Cliente(dados));
     }
     @GetMapping("/listar")
-    public List<ListagemClienteDTO> listar(){
-        return repository.findAll().stream().map(ListagemClienteDTO::new).toList();
+    public Page<ListagemClienteDTO> listar(Pageable paginacao){
+        return repository.findAll(paginacao).map(ListagemClienteDTO::new);
     }
 }
