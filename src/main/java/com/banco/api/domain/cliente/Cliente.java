@@ -28,5 +28,10 @@ public class Cliente {
     private TipoCliente tipo;
 
     public Cliente(ClienteDTO dados) {
+        this.nome = dados.nome();
+        this.documento = dados.documento();
+        this.email = dados.email();
+        this.senha = dados.senha();
+        this.tipo = dados.tipo();
     }
 }
