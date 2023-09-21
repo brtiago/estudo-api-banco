@@ -1,7 +1,5 @@
 package com.banco.api.dto;
 
-import com.banco.api.domain.cliente.TipoCliente;
-import jakarta.persistence.Enumerated;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 
@@ -14,7 +12,5 @@ public record ClienteDTO(
         @Email
         String email,
         @NotBlank
-        String senha,
-        @Enumerated
-        TipoCliente tipo) {
+        String senha) {
 }

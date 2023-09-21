@@ -3,7 +3,6 @@ package com.banco.api.domain.cliente;
 import com.banco.api.dto.AtualizacaoClienteDTO;
 import com.banco.api.dto.ClienteDTO;
 import jakarta.persistence.*;
-import jakarta.validation.constraints.NotBlank;
 import lombok.*;
 
 @Entity
@@ -25,8 +24,6 @@ public class Cliente {
     @Column(unique = true)
     private String email;
     private String senha;
-    @Enumerated(EnumType.STRING)
-    private TipoCliente tipo;
     private Boolean ativo;
 
     public Cliente(ClienteDTO dados) {
@@ -35,7 +32,6 @@ public class Cliente {
         this.documento = dados.documento();
         this.email = dados.email();
         this.senha = dados.senha();
-        this.tipo = dados.tipo();
     }
 
     public void atualizarInformacoes(AtualizacaoClienteDTO dados) {
