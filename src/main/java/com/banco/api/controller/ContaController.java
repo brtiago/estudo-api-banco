@@ -39,6 +39,18 @@ public class ContaController {
         return conta.depositar(dados);
     }
 
+    @Transactional
+    @PutMapping("/debitar")
+    public BigDecimal debitar(@RequestBody DepositarDTO dados) {
+        var conta = repository.getReferenceById(dados.id());
+        return conta.debitar(dados);
+    }
 
+    @Transactional
+    @DeleteMapping("/id")
+    public void excluir(@PathVariable Long id) {
+        var conta = repository.getReferenceById(id);
+        conta.excluir();
+    }
 
 }
