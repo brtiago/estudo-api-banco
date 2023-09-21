@@ -29,7 +29,7 @@ public class ClienteController {
     }
 
     @Transactional
-    @PutMapping
+    @PutMapping("/{id}")
     public void atualizar(@RequestBody @Valid AtualizacaoClienteDTO dados){
         var cliente = repository.getReferenceById(dados.id());
         cliente.atualizarInformacoes(dados);
