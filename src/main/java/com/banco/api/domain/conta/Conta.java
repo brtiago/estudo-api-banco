@@ -1,5 +1,6 @@
 package com.banco.api.domain.conta;
 
+import com.banco.api.dto.ContaDTO;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -18,9 +19,16 @@ public class Conta {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Column(name = "cliente_id")
     private Long idCliente;
     private BigDecimal saldo;
-    @Enumerated
+    @Enumerated(EnumType.STRING)
     private TipoConta tipo;
-
+    private Boolean ativo;
+    public Conta(ContaDTO dados) {
+        this.idCliente = dados.idCliente();
+        this.saldo = BigDecimal.ZERO;
+        this.tipo = dados.tipo();
+        this.ativo =true;
+    }
 }
