@@ -1,6 +1,7 @@
 package com.banco.api.domain.conta;
 
 import com.banco.api.dto.ContaDTO;
+import com.banco.api.dto.DebitarDTO;
 import com.banco.api.dto.DepositarDTO;
 import jakarta.persistence.*;
 import lombok.*;
@@ -37,19 +38,4 @@ public class Conta {
         this.ativo = false;
     }
 
-    public BigDecimal depositar(DepositarDTO dados) {
-        var valor = dados.valor();
-        if (valor.compareTo(BigDecimal.ZERO) >= 0){
-            this.saldo = this.saldo.add(valor);
-        }
-        return this.saldo;
-    }
-
-    public BigDecimal debitar(DepositarDTO dados) {
-        var valor = dados.valor();
-        if ((valor.compareTo(BigDecimal.ZERO) > 0) && (this.saldo.compareTo(BigDecimal.ZERO) > 0)) {
-            this.saldo = this.saldo.subtract(valor);
-        }
-        return this.saldo;
-    }
 }
