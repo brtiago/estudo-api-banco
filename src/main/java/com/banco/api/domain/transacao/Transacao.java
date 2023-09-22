@@ -24,6 +24,6 @@ public class Transacao {
     private Conta origem;
     @ManyToOne
     private Conta destino;
-    private LocalDateTime hora;
+    private LocalDateTime timestamp;
 
 }
