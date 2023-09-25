@@ -1,0 +1,33 @@
+_id: req_54d5717bfeaf49c798402dec1c6d106b
+type: Request
+parentId: wrk_0b933769be0f476593d0589a83fed29b
+modified: 1695229748573
+created: 1695225984378
+url: localhost:8080/clientes
+name: Atualizar Clientes
+description: ""
+method: PUT
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"id": "13",
+    	"nome": "Carlos Alves da Silva",
+      "email": "sandra.costa@gmail.com",
+      "senha": "senhacarlos"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: Insomnia/2023.5.7
+authentication: {}
+metaSortKey: -1695180934238.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

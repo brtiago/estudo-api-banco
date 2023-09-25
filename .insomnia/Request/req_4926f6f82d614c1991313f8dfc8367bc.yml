@@ -1,0 +1,32 @@
+_id: req_4926f6f82d614c1991313f8dfc8367bc
+type: Request
+parentId: wrk_0b933769be0f476593d0589a83fed29b
+modified: 1695144187272
+created: 1695132508162
+url: localhost:8080/transaction
+name: Transferência
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+        "valor" : 100.00,
+        "pagador" : 4,
+        "beneficiario" : 15
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: Insomnia/2023.5.7
+authentication: {}
+metaSortKey: -1695132508162
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

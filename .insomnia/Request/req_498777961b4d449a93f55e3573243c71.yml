@@ -1,0 +1,27 @@
+_id: req_498777961b4d449a93f55e3573243c71
+type: Request
+parentId: wrk_0b933769be0f476593d0589a83fed29b
+modified: 1695238725810
+created: 1695217671923
+url: localhost:8080/clientes/listar
+name: Listagem de Clientes
+description: ""
+method: GET
+body:
+  mimeType: application/json
+  text: ""
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: Insomnia/2023.5.7
+authentication: {}
+metaSortKey: -1695217671923
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

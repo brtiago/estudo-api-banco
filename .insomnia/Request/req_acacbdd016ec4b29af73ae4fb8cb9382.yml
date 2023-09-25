@@ -1,0 +1,34 @@
+_id: req_acacbdd016ec4b29af73ae4fb8cb9382
+type: Request
+parentId: wrk_0b933769be0f476593d0589a83fed29b
+modified: 1695312111105
+created: 1695230224507
+url: localhost:8080/clientes/8
+name: Excluir Cliente
+description: ""
+method: DELETE
+body:
+  mimeType: application/json
+  text: |-
+    {
+            "nome": "Carlos Alves",
+            "email": "carlos.alves@gmail.com",
+            "documento": "876543",
+            "senha": "senhacarlos",
+            "tipo": "COMUM"
+        }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: Insomnia/2023.5.7
+authentication: {}
+metaSortKey: -1695142735505
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

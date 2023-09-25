@@ -1,0 +1,27 @@
+_id: req_975a8f965b7c471e9260f3b51718abda
+type: Request
+parentId: wrk_0b933769be0f476593d0589a83fed29b
+modified: 1695312146793
+created: 1695312095766
+url: localhost:8080/contas/listar
+name: Listagem de Contas
+description: ""
+method: GET
+body:
+  mimeType: application/json
+  text: ""
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: Insomnia/2023.5.7
+authentication: {}
+metaSortKey: -1695139813407
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

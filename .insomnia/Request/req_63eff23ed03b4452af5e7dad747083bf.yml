@@ -1,0 +1,31 @@
+_id: req_63eff23ed03b4452af5e7dad747083bf
+type: Request
+parentId: wrk_0b933769be0f476593d0589a83fed29b
+modified: 1695408649896
+created: 1695318135890
+url: localhost:8080/transacoes/depositar
+name: Depositar Valor
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"id": "2",
+    	"valor": "-100.00"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: Insomnia/2023.5.7
+authentication: {}
+metaSortKey: -1695136160784.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
