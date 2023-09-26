@@ -21,9 +21,21 @@ public class Transacao {
     private Long id;
     private BigDecimal valor;
     @ManyToOne
-    private Conta origem;
+    private Conta pagador;
     @ManyToOne
-    private Conta destino;
-    private LocalDateTime timestamp;
+    private Conta beneficiario;
+    private LocalDateTime data_hora;
 
+    public Transacao(BigDecimal valor, Conta pagador, Conta beneficiario) {
+        this.valor = valor;
+        this.pagador = pagador;
+        this.beneficiario = beneficiario;
+        this.data_hora = LocalDateTime.now();
+    }
+
+    public Transacao(BigDecimal valor, Conta conta) {
+        this.valor = valor;
+        this.pagador = conta;
+        this.data_hora = LocalDateTime.now();
+    }
 }
