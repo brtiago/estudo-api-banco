@@ -1,0 +1,31 @@
+_id: req_5d29d0d2c3474be99280a911be975c53
+type: Request
+parentId: wrk_0b933769be0f476593d0589a83fed29b
+modified: 1695408982852
+created: 1695321219632
+url: localhost:8080/transacoes/debitar
+name: Debitar Valor
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"id": "2",
+    	"valor": "-100.00"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: Insomnia/2023.5.7
+authentication: {}
+metaSortKey: -1695134334473.25
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
